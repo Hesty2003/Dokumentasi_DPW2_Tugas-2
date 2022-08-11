@@ -17,10 +17,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
-
 Route::get('/cart', function () {
     return view('cart');
 });
@@ -31,10 +27,6 @@ Route::get('/checkout', function () {
 
 Route::get('/contact-us', function () {
     return view('contact-us');
-});
-
-Route::get('/gallery', function () {
-    return view('gallery');
 });
 
 Route::get('/my-account', function () {
@@ -51,4 +43,8 @@ Route::get('/shop', function () {
 
 Route::get('/wishlist', function () {
     return view('wishlist');
+});
+
+Route::get('/login', function () {
+    return view('login');
 });

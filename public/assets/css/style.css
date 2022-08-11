@@ -271,6 +271,15 @@
     width: 120px;
     margin-left: 20px;
 }
+.login-box ul li a{
+    color: #ffffff;
+     font-weight: 700;
+     text-transform: uppercase;
+     font-size: 14px;
+}
+.login-box ul li a:hover{
+    color: #b0b435;
+}
 
 .login-box .form-control{
      background: none;

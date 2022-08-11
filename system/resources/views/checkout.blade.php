@@ -49,11 +49,11 @@
 						</select>
                     </div>
                     <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> +11 900 800 100</a></p>
+                        <p>Call US :- <a href="#"> +6285820333664</a></p>
                     </div>
                     <div class="our-link">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
+                            <li><a href="{{ url('/my-account') }}"><i class="fa fa-user s_color"></i> My Account</a></li>
                             <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
                             <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
                         </ul>
@@ -120,19 +120,9 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item active"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('about') }}">About Us</a></li>
                         <li class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
-                            <ul class="dropdown-menu">
-								<li><a href="{{ url('/shop') }}">Sidebar Shop</a></li>
-								<li><a href="{{ url('/shop-detail') }}">Shop Detail</a></li>
-                                <li><a href="{{ url('/cart') }}">Cart</a></li>
-                                <li><a href="{{ url('/checkout') }}">Checkout</a></li>
-                                <li><a href="{{ url('/my-account') }}">My Account</a></li>
-                                <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
-                            </ul>
+                            <a href="{{ url('/shop') }}" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('/gallery') }}">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('contact-us') }}">Contact Us</a></li>
                     </ul>
                 </div>
